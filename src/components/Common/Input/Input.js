@@ -15,7 +15,7 @@ class Input extends PureComponent {
     additionalInputButtonIcon: shape(),
     additionalInputButtonAction: func,
     value: string,
-    handleDestinationOptionInputChange: func.isRequired
+    handleInputChange: func.isRequired
   }
 
   static defaultProps = {
@@ -28,7 +28,7 @@ class Input extends PureComponent {
   }
 
   handleInputChange = event => {
-    this.props.handleDestinationOptionInputChange(this.props.inputType, event.target.value)
+    this.props.handleInputChange(this.props.inputType, event.target.value)
   }
 
   render() {

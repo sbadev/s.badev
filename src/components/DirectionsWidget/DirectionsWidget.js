@@ -40,7 +40,7 @@ class DirectionsWidget extends PureComponent {
               icon={faDotCircle}
               additionalInputButtonIsVisible={destinationOptionsAreExpanded}
               value={startingPoint}
-              handleDestinationOptionInputChange={this.props.handleDestinationOptionInputChange}
+              handleInputChange={this.props.handleDestinationOptionInputChange}
             />
             <Input
               inputType="destination"
@@ -50,7 +50,7 @@ class DirectionsWidget extends PureComponent {
               additionalInputButtonIcon={faTimesCircle}
               additionalInputButtonAction={this.props.toggleDestinationOptionsExpandCollapse}
               value={destination}
-              handleDestinationOptionInputChange={this.props.handleDestinationOptionInputChange}
+              handleInputChange={this.props.handleDestinationOptionInputChange}
             />
             {destinationOptionsAreExpanded &&
               <Input
@@ -61,7 +61,7 @@ class DirectionsWidget extends PureComponent {
                 additionalInputButtonIcon={faTimesCircle}
                 additionalInputButtonAction={this.props.toggleDestinationOptionsExpandCollapse}
                 value={destinationSecondary}
-                handleDestinationOptionInputChange={this.props.handleDestinationOptionInputChange}
+                handleInputChange={this.props.handleDestinationOptionInputChange}
 
               />
             }
