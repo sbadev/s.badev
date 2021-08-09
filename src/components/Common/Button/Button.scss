@@ -1,0 +1,24 @@
+.custom-button {
+    background: none;
+
+    svg {
+        padding: 0 10px 0 0;
+    }
+
+    &.icon-button {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+
+        svg {
+            padding: 0;
+        }
+    }
+}
+
+// <button /> reset
+button {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}

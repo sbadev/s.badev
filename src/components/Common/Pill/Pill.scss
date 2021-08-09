@@ -1,0 +1,10 @@
+.pill {
+  padding: 7px 14px;
+  background: #f5f5f5;
+  border-radius: 20px;
+
+  &--selected {
+    background: #6a6a6a;
+    color: white;
+  }
+}
